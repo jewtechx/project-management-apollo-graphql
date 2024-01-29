@@ -1,6 +1,6 @@
 import React from 'react'
 import { gql,useQuery} from '@apollo/client'
-import { GET_CLIENTS } from '../queries/clientQueries'
+import { GET_CLIENTS } from '../queries/ClientQueries'
 import Spinner from './Spinner'
 import ClientRow from './ClientRow'
 
@@ -14,7 +14,7 @@ export default function Clients() {
 
   return (
 
-    <div>{!loading && !error && (
+    <div className='container'>{!loading && !error && (
         <table className='table table-hover'>
             <thead>
                 <tr>
